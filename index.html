@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>To do App</title>
+</head>
+<body>
+
+    <header class="container header">
+        <h1 class="header__text">TODO</h1>
+        <i class="fa-regular fa-moon" style="color: #ffffff;"></i>
+    </header>
+
+    <section class="container input__section">
+        <form>
+            <input type="text" placeholder="Create a new todo…">
+        </form>
+    </section>
+
+    <section class="container todos__section">
+        <ul class="todos__section__list">
+          <!-- <li class="todos__section__list__item">
+            <div class="todos__section__list__item-checkbox checked">
+              <img src="./assets/img/checked.svg" alt="" />
+            </div>
+            <p class="todos__section__list__item-text">
+              Complete online JavaScript course
+            </p>
+          </li> -->
+          <li class="todos__section__list__item hidden">
+            <p><span class="item__count">1</span> items left</p>
+            <div class="todos__section__list__item--options">
+              <span class="selected">All</span>
+              <span>Active</span>
+              <span>Completed</span>
+            </div>
+            <p class="clearing__todos">Clear completed</p>
+          </li>
+        </ul>
+      </section>
+      <script src="./assets/js/app.js"></script>
+</body>
+</html>
